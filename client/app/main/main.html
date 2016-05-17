@@ -1,18 +1,78 @@
 <header class="hero-unit" id="banner">
   <div class="container">
-    <h1>'Allo, 'Allo!</h1>
-    <p class="lead">Kick-start your next web app with Angular Fullstack</p>
-    <img src="assets/images/yeoman.png" alt="I'm Yeoman">
+
+
+    <h1>Ambarella AlgoWeb Development Kit</h1>
+    <!--<p class="lead">Kick-start your next web app with Angular Fullstack</p>-->
+    <img src="assets/images/logo_s.png" class="img-rounded" alt="Ambarella">
   </div>
+
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </header>
 
 <div class="container">
   <div class="row">
     <div class="col-lg-12">
-      <h1 class="page-header">Features:</h1>
-      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in $ctrl.awesomeThings">
-        <li><a href="#" uib-tooltip="{{thing.info}}">{{thing.name}}</a></li>
-      </ul>
+      <h1 class="page-header">News:</h1>
+      <div class="list-group">
+        <a href="#" class="list-group-item">v0.0.1 New Fetures</a>
+        <a href="#" class="list-group-item">v0.0.1 Documentation</a>
+        <a href="#" class="list-group-item">Obstacle detection algorithm successfully detected zombies crossing San Tomas Expy</a>
+      </div>
+
+      <!--<ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in $ctrl.awesomeThings">-->
+        <!--<li><a href="#" uib-tooltip="{{thing.info}}">{{thing.name}}</a></li>-->
+      <!--</ul>-->
     </div>
   </div>
+
 </div>
+
+
+
+<div class="container">
+
+    <button id="bt" class="btn" data-toggle="modal" data-target="#myModal">Test Modal</button>
+
+    <script>
+
+            $("document").ready(function() {
+                setTimeout(function() {
+//                $("ul.galleria li:first-child img").trigger('click');
+                    document.getElementById("bt").click();
+                },10);
+            });
+
+
+    </script>
+
+    <!--<p id="test">555</p>-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Login</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the modal.</p>
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+

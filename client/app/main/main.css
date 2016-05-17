@@ -25,3 +25,8 @@
 .navbar-text {
   margin-left: 15px;
 }
+
+.jumbotron {
+  background-color: #449ef4;
+  color: #fff;
+}

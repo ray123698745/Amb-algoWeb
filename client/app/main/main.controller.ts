@@ -1,18 +1,25 @@
 'use strict';
 
 (function() {
-
+  
 class MainController {
 
-  constructor($http) {
+  constructor($http, Auth) {
     this.$http = $http;
     this.awesomeThings = [];
+    this.isLoggedIn = Auth.isLoggedIn;  
   }
 
   $onInit() {
     this.$http.get('/api/things').then(response => {
       this.awesomeThings = response.data;
     });
+
+      if(this.isLoggedIn){
+
+//           document.getElementById("bt").click();
+//           document.getElementById("test").innerHTML = "hi";
+      }
   }
 
   addThing() {
@@ -25,6 +32,16 @@ class MainController {
   deleteThing(thing) {
     this.$http.delete('/api/things/' + thing._id);
   }
+
+  open() {
+      // var modalInstance = $modal.open({
+      //     templateUrl: 'popup.html',
+      // });
+      var test;
+      test = 1+1;
+    return test;
+  }
+
 }
 
 angular.module('ambAlgoWebApp')

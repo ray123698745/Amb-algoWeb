@@ -3,8 +3,14 @@
 class NavbarController {
   //start-non-standard
   menu = [{
-    'title': 'Home',
-    'state': 'main'
+    'title': 'Query',
+    'state': 'query'
+  },{
+    'title': 'Benchmark',
+    'state': 'benchmark'
+  },{
+    'title': 'Annotate',
+    'state': 'annotate'
   }];
 
   isCollapsed = true;
